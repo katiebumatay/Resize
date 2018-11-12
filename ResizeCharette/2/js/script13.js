@@ -5,12 +5,9 @@ $(document).ready(function() {
 	
 	// });
 
-		$('.box').mouseenter(function(){
-		$(this).toggleClass("rotate30")
+	$('.box').mouseenter(function(){
+        $(this).toggleClass("blackOut");
 	});
-
-
-
 
 
 
