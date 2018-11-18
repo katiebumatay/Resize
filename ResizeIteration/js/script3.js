@@ -91,9 +91,11 @@ function makeDiv() {
 };
 
 $(document).ready(function() {
+	console.log("test");
 
-    $('.box').mouseenter(function(){
+    $('.box').click(function(){
         $(this).toggleClass("expand");
+        console.log("clicked");
     });
 
 });

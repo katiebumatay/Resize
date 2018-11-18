@@ -1,22 +1,24 @@
-	function showBox() {
+setInterval('showBox()', 800);
 
-		console.log("in showBox method")
+function showBox() {
 
-		var num = 1;
+	console.log("in showBox method");
 
-		if ($(".box").width(value) == "94vw") {
-			// var num = Math.floor(Math.random() * 1)
-			$("box:nth-child(num)").addClass("show");
-		}
-		if ($(".box").width(value) == "46vw") {
-			var num = Math.floor(Math.random() * 4)
-			$("box:nth-child(num)").addClass("show");
-		}
+	var num = 1;
+
+	if ($(".box").css(width) == "94vw") {
+		// var num = Math.floor(Math.random() * 1)
+		$("box:nth-child(" + num + ")").addClass("show");
+	}
+	if ($(".box").css(width) == "46vw") {
+		var num = Math.floor(Math.random() * 4)
+		$("box:nth-child(" + num + ")").addClass("show");
+	}
 
 		console.log(num);
-	};
+};
 
-	setInterval('showBox()', 800);
+
 
 
 
