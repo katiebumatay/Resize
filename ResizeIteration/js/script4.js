@@ -52,7 +52,22 @@ $(document).ready(function() {
 
 	// setInterval('showBox()', 800);
 
-	showBox();
+	$.fn.switchSpots = function() {
+        var cells = $(".box");
+        for(var i = 0; i < cells.length; i++){
+            var target = Math.floor(Math.random() * cells.length -1) + 1;
+            var target2 = Math.floor(Math.random() * cells.length -1) +1;
+            cells.eq(target).before(cells.eq(target2));
+        }
+    }
+    
+
+     $(function(){
+
+        $('body').switchSpots();
+
+     });
+
 
 
     $('.box').mouseenter(function(){
