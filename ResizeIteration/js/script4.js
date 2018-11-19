@@ -20,9 +20,9 @@ function showBox() {
 
 	$(theID).addClass("show");
 
-		console.log(num);
+	console.log(num);
 
-		num = num + 1;
+	num = num + 1;
 };
 
 
