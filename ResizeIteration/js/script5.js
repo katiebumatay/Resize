@@ -1,6 +1,6 @@
 
 
-var int = 500;
+// var int = 500;
 
 // function intervalTime() {
 // 	int = 100;
@@ -8,14 +8,150 @@ var int = 500;
 
 // }
 
-setInterval('showBox()', int);
+// setInterval('showBox()', 'makeInterval()');
+
+
+// function makeInterval() {
+
+// 	var int = 500;
+
+
+// 	if (w <= 400) {
+// 		if (h <= 200) {
+// 			int = 50; 
+// 		}
+// 		else if (h <= 320) {
+// 			int = 100;
+// 		}
+// 		else if (h <= 440) {
+// 			int = 150; 
+// 		}
+// 		else if (h <= 560) {
+// 			int = 200; 
+// 		}
+// 		else if (h <= 680) {
+// 			int = 250;
+// 		}
+// 		else {
+// 			int = 300; 
+// 		}
+// 	}
+
+// 	else if (w <= 600) {
+// 		if (h <= 200) {
+// 			int = 100;
+// 		}
+// 		else if (h <= 320) {
+// 			int = 150;
+// 		}
+// 		else if (h <= 440) {
+// 			int = 200;
+// 		}
+// 		else if (h <= 560) {
+// 			int = 250;
+// 		}
+// 		else if (h <= 680) {
+// 			int = 300;
+// 		}
+// 		else {
+// 			int = 350;
+// 		}
+// 	}
+
+// 	else if (w <= 800) {
+// 		if (h <= 200) {
+// 			int = 150; 
+// 		}
+// 		else if (h <= 320) {
+// 			int = 200; 
+// 		}
+// 		else if (h <= 440) {
+// 			int = 250; 
+// 		}
+// 		else if (h <= 560) {
+// 			int = 300; 
+// 		}
+// 		else if (h <= 680) {
+// 			int = 350; 
+// 		}
+// 		else {
+// 			int = 400; 
+// 		}
+// 	}
+
+// 	else if (w <= 1000) {
+// 		if (h <= 200) {
+// 			int = 200; 
+// 		}
+// 		else if (h <= 320) {
+// 			int = 250; 
+// 		}
+// 		else if (h <= 440) {
+// 			int = 300; 
+// 		}
+// 		else if (h <= 560) {
+// 			int = 350; 
+// 		}
+// 		else if (h <= 680) {
+// 			int = 400; 
+// 		}
+// 		else {
+// 			int = 450; 
+// 		}
+// 	}
+
+// 	else if (w <= 1200) {
+// 		if (h <= 200) {
+// 			int = 250; 
+// 		}
+// 		else if (h <= 320) {
+// 			int = 300; 
+// 		}
+// 		else if (h <= 440) {
+// 			int = 350; 
+// 		}
+// 		else if (h <= 560) {
+// 			int = 400; 
+// 		}
+// 		else if (h <= 680) {
+// 			int = 450; 
+// 		}
+// 		else {
+// 			int = 500; 
+// 		}
+// 	}
+
+// 	else {
+// 		if (h <= 200) {
+// 			int = 300; 
+// 		}
+// 		else if (h <= 320) {
+// 			int = 350; 
+// 		}
+// 		else if (h <= 440) {
+// 			int = 400; 
+// 		}
+// 		else if (h <= 560) {
+// 			int = 450; 
+// 		}
+// 		else if (h <= 680) {
+// 			int = 500; 
+// 		}
+// 		else {
+// 			int = 550;
+// 		}
+// 	}
+
+// 	return int;
+
+// };
 
 
 function showBox() {
 
 	// intervalTime();
 
-	console.log("in showBox method");
+	// console.log("in showBox method");
 
 	var w = window.innerWidth;
 	var h = window.innerHeight;
@@ -25,129 +161,163 @@ function showBox() {
 	if (w <= 400) {
 		if (h <= 200) {
 			num = Math.floor(Math.random() * 1024) + 1; 
-			int = 100;
+			setTimeout(showBox, 50);
 		}
 		else if (h <= 320) {
 			num = Math.floor(Math.random() * 512) + 1;
-			int = 200;
+			setTimeout(showBox, 100);
 		}
 		else if (h <= 440) {
 			num = Math.floor(Math.random() * 256) + 1; 
-			int = 300;
+			setTimeout(showBox, 150);
 		}
 		else if (h <= 560) {
 			num = Math.floor(Math.random() * 128) + 1; 
+			setTimeout(showBox, 200);
 		}
 		else if (h <= 680) {
 			num = Math.floor(Math.random() * 64) + 1; 
+			setTimeout(showBox, 250);
 		}
 		else {
 			num = Math.floor(Math.random() * 32) + 1; 
+			setTimeout(showBox, 300);
 		}
 	}
 
 	else if (w <= 600) {
 		if (h <= 200) {
 			num = Math.floor(Math.random() * 512) + 1; 
+			setTimeout(showBox, 100);
 		}
 		else if (h <= 320) {
 			num = Math.floor(Math.random() * 256) + 1; 
+			setTimeout(showBox, 150);
 		}
 		else if (h <= 440) {
-			num = Math.floor(Math.random() * 128) + 1; 
+			num = Math.floor(Math.random() * 128) + 1;
+			setTimeout(showBox, 200); 
 		}
 		else if (h <= 560) {
-			num = Math.floor(Math.random() * 64) + 1; 
+			num = Math.floor(Math.random() * 64) + 1;
+			setTimeout(showBox, 250);
 		}
 		else if (h <= 680) {
 			num = Math.floor(Math.random() * 32) + 1; 
+			setTimeout(showBox, 300);
 		}
 		else {
 			num = Math.floor(Math.random() * 16) + 1; 
+			setTimeout(showBox, 350);
 		}
 	}
 
 	else if (w <= 800) {
 		if (h <= 200) {
 			num = Math.floor(Math.random() * 256) + 1; 
+			setTimeout(showBox, 150);
 		}
 		else if (h <= 320) {
 			num = Math.floor(Math.random() * 128) + 1; 
+			setTimeout(showBox, 200); 
 		}
 		else if (h <= 440) {
 			num = Math.floor(Math.random() * 64) + 1; 
+			setTimeout(showBox, 250); 
 		}
 		else if (h <= 560) {
 			num = Math.floor(Math.random() * 32) + 1; 
+			setTimeout(showBox, 300);
 		}
 		else if (h <= 680) {
 			num = Math.floor(Math.random() * 16) + 1; 
+			setTimeout(showBox, 350);
 		}
 		else {
-			num = Math.floor(Math.random() * 8) + 1; 
+			num = Math.floor(Math.random() * 8) + 1;
+			setTimeout(showBox, 400); 
 		}
 	}
 
 	else if (w <= 1000) {
 		if (h <= 200) {
 			num = Math.floor(Math.random() * 128) + 1; 
+			setTimeout(showBox, 200); 
 		}
 		else if (h <= 320) {
-			num = Math.floor(Math.random() * 64) + 1; 
+			num = Math.floor(Math.random() * 64) + 1;
+			setTimeout(showBox, 250); 
 		}
 		else if (h <= 440) {
 			num = Math.floor(Math.random() * 32) + 1; 
+			setTimeout(showBox, 300);
 		}
 		else if (h <= 560) {
 			num = Math.floor(Math.random() * 16) + 1; 
+			setTimeout(showBox, 350);
 		}
 		else if (h <= 680) {
-			num = Math.floor(Math.random() * 8) + 1; 
+			num = Math.floor(Math.random() * 8) + 1;
+			setTimeout(showBox, 400);  
 		}
 		else {
 			num = Math.floor(Math.random() * 4) + 1; 
+			setTimeout(showBox, 450); 
 		}
 	}
 
 	else if (w <= 1200) {
 		if (h <= 200) {
 			num = Math.floor(Math.random() * 64) + 1; 
+			setTimeout(showBox, 250);
 		}
 		else if (h <= 320) {
 			num = Math.floor(Math.random() * 32) + 1; 
+			setTimeout(showBox, 300);
 		}
 		else if (h <= 440) {
 			num = Math.floor(Math.random() * 16) + 1; 
+			setTimeout(showBox, 350);
+
 		}
 		else if (h <= 560) {
-			num = Math.floor(Math.random() * 8) + 1; 
+			num = Math.floor(Math.random() * 8) + 1;
+			setTimeout(showBox, 400);  
 		}
 		else if (h <= 680) {
 			num = Math.floor(Math.random() * 4) + 1; 
+			setTimeout(showBox, 450); 
 		}
 		else {
 			num = Math.floor(Math.random() * 2) + 1; 
+			setTimeout(showBox, 500); 
 		}
 	}
 
 	else {
 		if (h <= 200) {
 			num = Math.floor(Math.random() * 32) + 1; 
+			setTimeout(showBox, 300);
 		}
 		else if (h <= 320) {
-			num = Math.floor(Math.random() * 16) + 1; 
+			num = Math.floor(Math.random() * 16) + 1;
+			setTimeout(showBox, 350); 
 		}
 		else if (h <= 440) {
 			num = Math.floor(Math.random() * 8) + 1; 
+			setTimeout(showBox, 400); 
 		}
 		else if (h <= 560) {
 			num = Math.floor(Math.random() * 4) + 1; 
+			setTimeout(showBox, 450); 
 		}
 		else if (h <= 680) {
 			num = Math.floor(Math.random() * 2) + 1; 
+			setTimeout(showBox, 500); 
 		}
 		else {
 			num = 1; 
+			setTimeout(showBox, 550); 
 		}
 	}
 
@@ -165,6 +335,8 @@ function showBox() {
 
 
 $(document).ready(function() {
+
+	showBox();
 
 	// $.fn.showBox = function() {
 
