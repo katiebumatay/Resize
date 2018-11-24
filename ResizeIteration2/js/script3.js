@@ -227,12 +227,13 @@ $(document).ready(function() {
  //        $('body').switchSpots();
 
  //     });
-
+ 	var effect;
+ 	var effectClass;
 
 
     $('.box').mouseenter(function(){
-    	var effect = Math.floor(Math.random() * 10) + 1;
-    	var effectClass = "effect" + effect
+    	effect = Math.floor(Math.random() * 10) + 1;
+    	effectClass = "effect" + effect
     	// $(this).showBox();
         $(this).toggleClass(effectClass);
         console.log(effectClass);
