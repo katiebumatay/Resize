@@ -80,20 +80,7 @@
 	transition: 1s;
 }
 
-/*.effect9 {
-	transform: rotateZ(-45deg);
-	transition: 1s;
-}
 
-.effect10 {
-	transform: rotateZ(45deg);
-	transition: 1s;
-}*/
-
-/*.box:nth-child(even) {
-	background-color: #999999;
-}
-*/
 
 
 @media (max-width: 1400px) { 
