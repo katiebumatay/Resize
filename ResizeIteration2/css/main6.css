@@ -91,6 +91,12 @@
 	background-size: cover;
 }
 
+.gif9 {
+	background-image: url(../images/9.gif);
+	background-repeat: no-repeat;
+	height: 120%;
+	background-size: cover;
+}
 /*.show2 {
 	opacity: 1;
 	transition: 1s;
