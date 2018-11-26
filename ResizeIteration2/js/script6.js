@@ -185,7 +185,7 @@ function showBox() {
 };
 
 function loadGif() {
-	var gifNum = Math.floor(Math.random() * 8) + 1;
+	var gifNum = Math.floor(Math.random() * 9) + 1;
 	var gifClass = "gif" + gifNum
 
 	$(".box").addClass(gifClass);
