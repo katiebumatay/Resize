@@ -1,3 +1,9 @@
+var chimeOne = $("#chime-one")[0];
+$(".box").mouseenter(function() {
+		chimeOne.play();
+	});
+
+
 
 
 function showBox() {
@@ -200,13 +206,11 @@ $(document).ready(function() {
 
 	loadGif();
 
-	// showBox();
+	showBox();
 
 
  	var effect;
  	var effectClass;
-
-
 
     $('.box').mouseenter(function(){
     	effect = Math.floor(Math.random() * 3) + 1;
@@ -216,6 +220,7 @@ $(document).ready(function() {
         // $(this).toggleClass("effect1");
         console.log(effectClass);
     });
+
 
 });
 
