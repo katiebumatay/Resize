@@ -4,7 +4,6 @@ function loadGifWide() {
 	var gifClass = "gif" + gifNum
 
 	$(".box").addClass(gifClass);
-	// $(".box").addClass("gif18");
 
 };
 
@@ -14,7 +13,6 @@ function loadGifTall() {
 	var gifClass = "gif" + gifNum
 
 	$(".box2").addClass(gifClass);
-	// $(".box").addClass("gif18");
 
 };
 
@@ -102,7 +100,6 @@ $(document).ready(function() {
 
 	setup();
 
-	// loadGif();
 	resizeMe();
 
 
@@ -137,19 +134,15 @@ $(document).ready(function() {
 
     $('.box').mouseenter(function(){
     	effect = Math.floor(Math.random() * 3) + 1;
-    	effectClass = "effect" + effect
-    	// $(this).showBox();
+    	effectClass = "effect" + effect;
         $(this).toggleClass(effectClass);
-        // $(this).toggleClass("effect1");
         console.log(effectClass);
     });
 
     $('.box2').mouseenter(function(){
     	effect = Math.floor(Math.random() * 3) + 1;
-    	effectClass = "effect" + effect
-    	// $(this).showBox();
+    	effectClass = "effect" + effect;
         $(this).toggleClass(effectClass);
-        // $(this).toggleClass("effect1");
         console.log(effectClass);
     });
 
