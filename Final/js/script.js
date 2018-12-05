@@ -107,16 +107,8 @@ $(document).ready(function() {
 		$('#bottom').animate({opacity:"0.5",}, 0);
 	});
 
-	$('.container').mouseover(function(){
-		$('#bottom').animate({opacity:"0",}, 0);
-	});
-
 	$('#leftA').mouseover(function(){
 		$('#left').animate({opacity:"0.5",}, 0);
-	});
-
-	$('.container').mouseover(function(){
-		$('#left').animate({opacity:"0",}, 0);
 	});
 
 	$('#rightA').mouseover(function(){
@@ -124,7 +116,7 @@ $(document).ready(function() {
 	});
 
 	$('.container').mouseover(function(){
-		$('#right').animate({opacity:"0",}, 0);
+		$('#right, #left, #bottom, #triangle-bottomright').animate({opacity:"0",}, 0);
 	});
 
 
@@ -148,10 +140,6 @@ $(document).ready(function() {
 
    	$('#reloadApproach').mouseover(function(){
 		$('#triangle-bottomright').animate({opacity:"0.5",}, 0);
-	});
-
-	$('.container').mouseover(function(){
-		$('#triangle-bottomright').animate({opacity:"0",}, 0);
 	});
 
     $('#triangle-bottomright').click(function(){
