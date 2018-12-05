@@ -1,9 +1,19 @@
 
-function loadGif() {
+function loadGifWide() {
 	var gifNum = Math.floor(Math.random() * 18) + 1;
 	var gifClass = "gif" + gifNum
 
 	$(".box").addClass(gifClass);
+	// $(".box").addClass("gif18");
+
+};
+
+function loadGifTall() {
+	console.log("in loadGifTall")
+	var gifNum = Math.floor(Math.random() * 18) + 1;
+	var gifClass = "gif" + gifNum
+
+	$(".box2").addClass(gifClass);
 	// $(".box").addClass("gif18");
 
 };
@@ -23,24 +33,24 @@ function setup() {
 			for (var i = 1; i <= 850; i++) {
 				IDname = "box" + i;
 				element = document.getElementById(IDname);
-				console.log(IDname);
 				element.classList.remove("box2");
    				element.classList.add("box");
 			}
 			horizontalView = true;
 			verticalView = false;
+			loadGifWide();
 		}
 		else if (w<h) {
 			console.log("loaded with width < height")
 			for (var i = 1; i <= 850; i++) {
 				IDname = "box" + i;
 				element = document.getElementById(IDname);
-				console.log(IDname);
 				element.classList.remove("box");
    				element.classList.add("box2");
 			}
 			verticalView = true;
 			horizontalView = false;
+			loadGifTall();
 		}
 }
 
@@ -60,7 +70,6 @@ function resizeMe() {
 			for (var i = 1; i <= 850; i++) {
 				IDname = "box" + i;
 				element = document.getElementById(IDname);
-				console.log(IDname);
 				element.classList.remove("box2");
    				element.classList.add("box");
 			}
@@ -75,7 +84,6 @@ function resizeMe() {
 			for (var i = 1; i <= 850; i++) {
 				IDname = "box" + i;
 				element = document.getElementById(IDname);
-				console.log(IDname);
 				element.classList.remove("box");
    				element.classList.add("box2");
 			}
@@ -94,7 +102,7 @@ $(document).ready(function() {
 
 	setup();
 
-	loadGif();
+	// loadGif();
 	resizeMe();
 
 
