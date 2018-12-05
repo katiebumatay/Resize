@@ -10,8 +10,40 @@ function loadGif() {
 
 var IDname;
 var element;
+var horizontalView = true;
+var verticalView = true;
 var theWidth = 600;
 var theHeight = 600;
+
+function setup() {
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+		if (w>=h) {
+			console.log("loaded with width >= height");
+			for (var i = 1; i <= 850; i++) {
+				IDname = "box" + i;
+				element = document.getElementById(IDname);
+				console.log(IDname);
+				element.classList.remove("box2");
+   				element.classList.add("box");
+			}
+			horizontalView = true;
+			verticalView = false;
+		}
+		else if (w<h) {
+			console.log("loaded with width < height")
+			for (var i = 1; i <= 850; i++) {
+				IDname = "box" + i;
+				element = document.getElementById(IDname);
+				console.log(IDname);
+				element.classList.remove("box");
+   				element.classList.add("box2");
+			}
+			verticalView = true;
+			horizontalView = false;
+		}
+}
+
 
 function resizeMe() {
 	var w = window.innerWidth;
@@ -20,7 +52,10 @@ function resizeMe() {
 		console.log("window size did not change");
 	}
 	else{
-		if (w>=h) {
+		if (w>=h && horizontalView==true) {
+			console.log("don't change class");
+		}
+		if (w>=h && horizontalView==false) {
 			console.log("width >= height");
 			for (var i = 1; i <= 850; i++) {
 				IDname = "box" + i;
@@ -29,8 +64,13 @@ function resizeMe() {
 				element.classList.remove("box2");
    				element.classList.add("box");
 			}
+			horizontalView = true;
+			verticalView = false;
 		}
-		else if (w<h) {
+		if (w<h && verticalView==true) {
+			console.log("don't change class");
+		}
+		if (w<h && verticalView==false) {
 			console.log("width < height")
 			for (var i = 1; i <= 850; i++) {
 				IDname = "box" + i;
@@ -39,6 +79,8 @@ function resizeMe() {
 				element.classList.remove("box");
    				element.classList.add("box2");
 			}
+			verticalView = true;
+			horizontalView = false;
 		}
 	}
 	theWidth = w;
@@ -50,31 +92,11 @@ function resizeMe() {
 
 $(document).ready(function() {
 
+	setup();
+
 	loadGif();
 	resizeMe();
 
-	// $.fn.resizeMe = function() {
-	// 	var w = window.innerWidth;
-	// 	var h = window.innerHeight;
-	// 	if (w>=h) {
-	// 		console.log("width >= height");
-	// 		for (var i = 1; i <= 1024; i++) {
-	// 			$(this).removeClass("box2");
-	// 			$(this).addClass("box");
-	// 		}
-	// 	}
-	// 	else if (w<h) {
-	// 		console.log("width < height")
-	// 		for (var i = 1; i <= 1024; i++) {
-	// 			$(this).removeClass("box");
-	// 			$(this).addClass("box2");
-	// 		}
-	// 	}
-	// }
-
-	// $('.box').resizeMe();
-
-	// showBox();
 
 	$('#bottomA').mouseover(function(){
 		$('#bottom').animate({opacity:"0.5",}, 200);
