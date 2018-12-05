@@ -101,6 +101,7 @@ $(document).ready(function() {
 	});
 
 
+
  	var effect;
  	var effectClass;
 
@@ -121,6 +122,14 @@ $(document).ready(function() {
         // $(this).toggleClass("effect1");
         console.log(effectClass);
     });
+
+   	$('#reloadApproach').mouseover(function(){
+		$('#triangle-bottomright').animate({opacity:"0.5",}, 200);
+	});
+
+	$('#reloadApproach').mouseout(function(){
+		$('#triangle-bottomright').animate({opacity:"0",}, 200);
+	});
 
     $('#triangle-bottomright').click(function(){
     	location.reload(true);
