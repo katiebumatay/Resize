@@ -166,6 +166,9 @@ $(document).ready(function() {
     	console.log("relaod");
     });
 
+    $('h3').css( 'cursor', 'pointer' );
+
+
 
 });
 
