@@ -76,6 +76,30 @@ $(document).ready(function() {
 
 	// showBox();
 
+	$('#bottomA').mouseover(function(){
+		$('#bottom').animate({opacity:"0.5",}, 200);
+	});
+
+	$('#bottomA').mouseout(function(){
+		$('#bottom').animate({opacity:"0",}, 200);
+	});
+
+	$('#leftA').mouseover(function(){
+		$('#left').animate({opacity:"0.5",}, 200);
+	});
+
+	$('#leftA').mouseout(function(){
+		$('#left').animate({opacity:"0",}, 200);
+	});
+
+	$('#rightA').mouseover(function(){
+		$('#right').animate({opacity:"0.5",}, 200);
+	});
+
+	$('#rightA').mouseout(function(){
+		$('#right').animate({opacity:"0",}, 200);
+	});
+
 
  	var effect;
  	var effectClass;

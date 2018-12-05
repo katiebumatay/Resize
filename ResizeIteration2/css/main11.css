@@ -1,3 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.approach {
+	position: fixed;
+	z-index: 20;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+/*	background-color: white;*/
+	opacity: 1;
+	height: 100vh;
+	width: 10vw;
+}
+
+#bottomA {
+	height: 15vh;
+	width: 100vw;
+	bottom: 0;
+}
+
+#leftA {
+	left: 0;
+}
+
+#rightA {
+	right: 0;
+}
 
 .bar {
 	position: fixed;
@@ -8,7 +38,7 @@
 	height: 100vh;
 	width: 20px;
 	background-color: black;
-	opacity: 0.75;
+	opacity: 0;
 	color: white;
 	font-size: 12px;
 	font-family: 'IBM Plex Mono', monospace;
@@ -18,7 +48,8 @@ h1 {
 	position: relative;
 	font-size: 12px;
 	padding-left: 45vw;
-	bottom: 6px;
+	bottom: 5px;
+	white-space: nowrap;
 }
 
 h2 {
@@ -28,6 +59,7 @@ h2 {
 	top: 50%;
 	font-size: 12px;
 	transform: rotateZ(-90deg);
+	white-space: nowrap;
 }
 
 #bottom {
