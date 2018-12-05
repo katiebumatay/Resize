@@ -1,10 +1,10 @@
 
 function loadGif() {
-	var gifNum = Math.floor(Math.random() * 14) + 1;
+	var gifNum = Math.floor(Math.random() * 18) + 1;
 	var gifClass = "gif" + gifNum
 
-	// $(".box").addClass(gifClass);
-	$(".box").addClass("gif18");
+	$(".box").addClass(gifClass);
+	// $(".box").addClass("gif18");
 
 };
 
@@ -120,6 +120,11 @@ $(document).ready(function() {
         $(this).toggleClass(effectClass);
         // $(this).toggleClass("effect1");
         console.log(effectClass);
+    });
+
+    $('#triangle-bottomright').click(function(){
+    	location.reload(true);
+    	console.log("relaod");
     });
 
 

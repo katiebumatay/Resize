@@ -3,6 +3,48 @@ body {
 	padding: 0;
 }
 
+#reloadApproach {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 60;
+    width: 200px;
+    height: 200px;
+}
+
+/*span {
+	position: fixed;
+	bottom: 30px;
+	right: 0;
+	z-index: 100;
+	right: 10%;
+	color: white;
+	font-size: 20px;
+}
+*/
+h3 {
+	position: relative;
+	bottom: -45px;
+	right: 65px;
+	height: 100%:;
+	color: white;
+	font-size: 12px;
+	font-family: 'IBM Plex Mono', monospace;
+	white-space: nowrap;
+	transform: rotate(-45deg);
+}
+
+#triangle-bottomright {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 50;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid black;
+    border-left: 100px solid transparent;
+    opacity: 0.5;
+}
 .approach {
 	position: fixed;
 	z-index: 20;
