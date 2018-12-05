@@ -104,27 +104,27 @@ $(document).ready(function() {
 
 
 	$('#bottomA').mouseover(function(){
-		$('#bottom').animate({opacity:"0.5",}, 200);
+		$('#bottom').animate({opacity:"0.5",}, 0);
 	});
 
-	$('#bottomA').mouseout(function(){
-		$('#bottom').animate({opacity:"0",}, 200);
+	$('.container').mouseover(function(){
+		$('#bottom').animate({opacity:"0",}, 0);
 	});
 
 	$('#leftA').mouseover(function(){
-		$('#left').animate({opacity:"0.5",}, 200);
+		$('#left').animate({opacity:"0.5",}, 0);
 	});
 
-	$('#leftA').mouseout(function(){
-		$('#left').animate({opacity:"0",}, 200);
+	$('.container').mouseover(function(){
+		$('#left').animate({opacity:"0",}, 0);
 	});
 
 	$('#rightA').mouseover(function(){
-		$('#right').animate({opacity:"0.5",}, 200);
+		$('#right').animate({opacity:"0.5",}, 0);
 	});
 
-	$('#rightA').mouseout(function(){
-		$('#right').animate({opacity:"0",}, 200);
+	$('.container').mouseover(function(){
+		$('#right').animate({opacity:"0",}, 0);
 	});
 
 
