@@ -147,11 +147,11 @@ $(document).ready(function() {
     });
 
    	$('#reloadApproach').mouseover(function(){
-		$('#triangle-bottomright').animate({opacity:"0.5",}, 200);
+		$('#triangle-bottomright').animate({opacity:"0.5",}, 0);
 	});
 
-	$('#reloadApproach').mouseout(function(){
-		$('#triangle-bottomright').animate({opacity:"0",}, 200);
+	$('.container').mouseover(function(){
+		$('#triangle-bottomright').animate({opacity:"0",}, 0);
 	});
 
     $('#triangle-bottomright').click(function(){
